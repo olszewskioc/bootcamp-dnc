@@ -171,3 +171,138 @@ input[type="submit"]:hover{
     box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
     cursor: crosshair;
 }
+
+/* Footer */
+
+footer {
+    background-color: var(--azul-dnc);
+    width: 100%;
+}
+
+footer #linha1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+}
+
+footer h5 {
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    background-color: var(--preto-dnc);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+footer ul li {
+    text-align: center;
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    margin: 20px 0px 20px 0px;
+}
+
+.link-linha1 {
+    color: white;
+    text-decoration: none;
+}
+
+.link-linha1:hover {
+    color: var(--cinza-hover);
+}
+
+footer #endereco {
+    color: white;
+    font-weight: 600;
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    text-align: center;
+    width: 20%;
+}
+
+footer #linha2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 5px;
+    height: 35px;
+}
+
+.link-linha2 {
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 10px;  
+}
+
+.link-linha2:hover {
+    color: var(--cinza-hover);
+}
+
+.link-linha2:first-child {
+    border-right: 3px solid white;
+}
+
+@media only screen and (max-width: 600px){
+    #principal{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #menu {
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+
+    #menu a {
+        display: flex;
+        height: 50px;
+        align-items: center;
+    }
+
+    #principal button {
+        width: 100%;
+        margin: 0px;
+    }
+
+    /* Seção */
+    section h1 {
+        font-size: 38px;
+    }
+
+    section h2 {
+        font-size: 28px;
+        padding: 0px 15px 0px 15px;
+    }
+
+    /* Formulário */
+
+    form {
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .checkbox-items label {
+        font-size: 17px;
+    }
+}
